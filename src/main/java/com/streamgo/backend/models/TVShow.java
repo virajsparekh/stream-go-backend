@@ -16,7 +16,7 @@ public class TVShow {
     private String title;
     private String type;
 
-    @Field("synopsis") // Fixed space in annotation
+    @Field("synopsis")
     private String synopsis;
 
     @Field("small_poster")
@@ -57,7 +57,6 @@ public class TVShow {
 
     private Boolean featured;
 
-    // Add explicit getter for null safety
     public Integer getSeasons() {
         return seasons != null ? seasons : 0;
     }
